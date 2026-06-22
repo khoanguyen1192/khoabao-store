@@ -1,7 +1,7 @@
 # Terms of Service for AuraDesk
 
 **Effective Date:** June 13, 2026  
-**Last Updated:** June 13, 2026  
+**Last Updated:** June 22, 2026  
 **Developer:** Khoa Bảo Store (Legal Owner: NGUYEN DINH BAO KHOA)
 
 ---
@@ -48,9 +48,54 @@ AuraDesk operates on a **freemium licensing model**:
 - **Core App Features:** Available free of charge. This includes the countdown event manager, widget studio, flip clock display, basic themes, and all standard functionality.
 - **Premium Themes:** 12 premium artisan themes are available for individual purchase at **$0.99 USD per theme** (or equivalent in your local currency as determined by Apple)
 - **Lifetime Pro Bundle:** Provides one-time purchase access to all premium themes and removal of all advertisements for a single price (as displayed on the App Store at time of purchase)
+- **Weekly Auto-Renewing Subscription:** Unlimited access to all premium themes and ad-free experience, billed weekly (every 7 days) at the displayed price
+- **Monthly Auto-Renewing Subscription:** Unlimited access to all premium themes and ad-free experience, billed monthly (every 30 days) at the displayed price
+- **Yearly Auto-Renewing Subscription:** Unlimited access to all premium themes and ad-free experience, billed yearly (every 365 days) at the displayed price. Includes a free 3-day trial period before the first billing occurs.
 - **Supporter Edition:** Premium subscription tier that includes all Lifetime Pro benefits plus an exclusive Supporter Badge and support for independent app development (price as displayed on the App Store)
 
-### 3.2 In-App Purchase Processing
+### 3.2 Auto-Renewable Subscriptions
+
+AuraDesk offers **auto-renewable subscriptions** (Weekly, Monthly, and Yearly) for premium content access. The following terms apply:
+
+#### 3.2.1 Subscription Duration & Pricing
+
+- **Weekly Subscription:** Auto-renews every 7 calendar days at the price displayed at time of purchase
+- **Monthly Subscription:** Auto-renews every 30 calendar days at the price displayed at time of purchase
+- **Yearly Subscription:** Auto-renews every 365 calendar days at the price displayed at time of purchase; includes a free 3-day trial period before the first renewal billing occurs
+- All subscription prices are displayed in the App before purchase confirmation
+- Prices are in USD or the equivalent local currency as determined by Apple Inc.
+
+#### 3.2.2 Automatic Renewal & Billing
+
+- Your subscription will **automatically renew** at the end of each billing period unless you cancel it before the renewal date
+- Your iTunes/Apple ID account will be charged on the renewal date (the same date each week/month/year)
+- Renewal charges appear as separate line items on your Apple ID billing statement
+- If your subscription includes a free trial period, your paid subscription will begin on the day after the trial period expires
+
+#### 3.2.3 Cancellation & Trial Period
+
+You can **cancel your subscription at any time**, but refunds are only available for unused portions of the current billing period in accordance with Apple's refund policies (see Section 3.4). To cancel:
+
+1. Open the **Settings** app on your iOS device
+2. Tap **[Your Name]** at the top of the screen
+3. Select **Subscriptions**
+4. Find **AuraDesk** in the list
+5. Tap **Manage** and select **Cancel Subscription**
+
+Alternatively, you may contact **Apple Support** at [https://support.apple.com/billing](https://support.apple.com/billing) to cancel your subscription.
+
+**Free Trial Cancellation:** If you are in a free trial period and cancel before the paid period begins, you will not be charged. If you cancel during a paid period, you will be charged through the current billing period.
+
+#### 3.2.4 Subscription Consent
+
+By initiating a purchase of an auto-renewing subscription, you:
+
+- Authorize Khoa Bảo Store to initiate recurring charges to your Apple ID account
+- Acknowledge that your subscription will renew automatically on the displayed schedule
+- Understand that you must actively cancel to prevent renewal charges
+- Agree to receive renewal reminder notifications from Apple before each billing date
+
+### 3.3 In-App Purchase Processing
 
 **All in-app purchases are processed exclusively through Apple's StoreKit 2 infrastructure:**
 
@@ -59,7 +104,7 @@ AuraDesk operates on a **freemium licensing model**:
 - Transaction validation, license verification, and purchase entitlements are managed by Apple's secure servers
 - All disputes regarding charges, refunds, or billing must be directed to **Apple Support**, not the Developer
 
-### 3.3 Purchase Entitlements & License Keys
+### 3.4 Purchase Entitlements & License Keys
 
 Upon successful purchase through StoreKit 2:
 
@@ -68,7 +113,7 @@ Upon successful purchase through StoreKit 2:
 - Premium themes remain locked if you uninstall and reinstall the App; restoration of entitlements is handled automatically via StoreKit 2 verification
 - If you change Apple IDs, you must re-purchase premium content on the new account; the Developer provides no cross-account transfer mechanism
 
-### 3.4 Refund Policy
+### 3.5 Refund Policy
 
 **Refund requests are subject to Apple's standard refund policies:**
 
@@ -77,7 +122,7 @@ Upon successful purchase through StoreKit 2:
 - Refund eligibility is determined by Apple based on the reason for the request and Apple's standard refund guidelines
 - Once a refund is issued by Apple, the corresponding license to use the purchased premium theme is revoked
 
-### 3.5 Price Changes
+### 3.6 Price Changes
 
 We reserve the right to change the pricing of premium themes, bundles, and subscription tiers at any time. Price changes will be reflected on the App Store listing and take effect for new purchases immediately. Existing purchased entitlements are not affected by price changes.
 
