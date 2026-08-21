@@ -39,6 +39,10 @@ img { max-width: 100%; }
 .nav-links { display: flex; gap: 22px; align-items: center; }
 .nav-links a { color: var(--muted); text-decoration: none; font-weight: 650; font-size: 0.94rem; }
 .nav-links a:hover, .nav-links a[aria-current="page"] { color: var(--text); }
+.nav-links .nav-download {
+  padding: 7px 13px; border-radius: 11px; color: white; background: var(--coral);
+}
+.nav-links .nav-download:hover { color: white; background: #ff6a54; }
 .hero { padding: 92px 0 72px; text-align: center; overflow: hidden; }
 .eyebrow {
   display: inline-flex; align-items: center; gap: 8px;
@@ -60,6 +64,9 @@ h3 { margin: 0 0 10px; font-size: 1.25rem; }
 }
 .button:hover { color: white; transform: translateY(-1px); }
 .button.secondary { color: var(--text); background: var(--surface-strong); box-shadow: none; border: 1px solid var(--line); }
+.app-store-button { gap: 11px; min-height: 58px; padding-inline: 22px; text-align: left; line-height: 1.05; }
+.app-store-button small { display: block; margin-bottom: 3px; font-size: 0.68rem; font-weight: 650; opacity: 0.78; }
+.store-icon { display: grid; place-items: center; width: 29px; height: 29px; border: 2px solid rgba(255,255,255,.82); border-radius: 9px; font-size: 1rem; }
 .balance-art { position: relative; width: min(560px, 88vw); height: 205px; margin: 60px auto 0; }
 .beam {
   position: absolute; left: 5%; top: 64px; width: 90%; height: 28px;
