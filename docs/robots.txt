@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://khoanguyen1192.github.io/khoabao-store/sitemap.xml
