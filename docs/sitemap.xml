@@ -42,4 +42,8 @@
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url><loc>https://khoanguyen1192.github.io/khoabao-store/apps/finishdial/</loc><lastmod>2026-09-08</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://khoanguyen1192.github.io/khoabao-store/apps/finishdial/support/</loc><lastmod>2026-09-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://khoanguyen1192.github.io/khoabao-store/apps/finishdial/privacy/</loc><lastmod>2026-09-08</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://khoanguyen1192.github.io/khoabao-store/apps/finishdial/terms/</loc><lastmod>2026-09-08</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
 </urlset>
