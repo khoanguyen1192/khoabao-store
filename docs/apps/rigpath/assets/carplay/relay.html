@@ -1,0 +1,15 @@
+<!doctype html><meta charset="utf-8"><title>RigPath CarPlay screenshots</title>
+<p id="s">Loading screenshots…</p>
+<script>
+(async () => {
+  const names = ['1_iphone-17-pro-max_05-route.jpg','2_iphone-17-pro-max_08-drive.jpg','3_iphone-17-pro-max_06-days.jpg'];
+  const shots = [];
+  for (const n of names) {
+    const b = await (await fetch(n)).blob();
+    const dataUrl = await new Promise(r => { const fr = new FileReader(); fr.onload = () => r(fr.result); fr.readAsDataURL(b); });
+    shots.push({ name: n, dataUrl });
+  }
+  document.getElementById('s').textContent = 'Loaded ' + shots.length + ' screenshots' + (window.opener ? ' — sending to the form tab.' : ' (no opener).');
+  if (window.opener) window.opener.postMessage({ rigpathShots: shots }, '*');
+})();
+</script>
