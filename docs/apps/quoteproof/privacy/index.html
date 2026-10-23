@@ -1,0 +1,100 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Privacy Policy / Chính sách quyền riêng tư — QuoteProof</title><link rel="canonical" href="https://lessbyte.app/apps/quoteproof/privacy/"><style>:root {
+  color-scheme: light dark;
+  --canvas: #f6f1e7;
+  --surface: #fffdf8;
+  --ink: #17201d;
+  --muted: #5d6963;
+  --action: #b0330c;
+  --ready: #004740;
+  --line: color-mix(in srgb, var(--ink) 16%, transparent);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--canvas);
+  color: var(--ink);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+header, main, footer {
+  width: min(760px, calc(100% - 40px));
+  margin-inline: auto;
+}
+
+header { padding: 48px 0 20px; }
+main { padding-bottom: 48px; }
+footer {
+  border-top: 1px solid var(--line);
+  padding: 24px 0 40px;
+  color: var(--muted);
+}
+
+.brand {
+  color: var(--ready);
+  font-size: .82rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+h1, h2 { line-height: 1.2; }
+h1 { margin: 10px 0; font-size: clamp(2rem, 7vw, 3.4rem); }
+h2 { margin-top: 2rem; }
+
+.lede { color: var(--muted); font-size: 1.15rem; }
+.card {
+  margin: 22px 0;
+  padding: 22px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+
+a { color: var(--action); font-weight: 650; }
+nav { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 22px; }
+li + li { margin-top: .5rem; }
+code { overflow-wrap: anywhere; }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --canvas: #111513;
+    --surface: #1c2320;
+    --ink: #f4f1e9;
+    --muted: #b9c2bd;
+    --action: #ff6e38;
+    --ready: #5cd6c7;
+  }
+}
+
+.language {scroll-margin-top:24px} .languages{display:flex;gap:24px;padding:16px 0} </style></head><body><header><div class="brand">QuoteProof · formerly ScopeVouch</div><h1>Privacy Policy / Chính sách quyền riêng tư</h1><p class="lede">Updated October 23, 2026 · Cập nhật 23/10/2026</p><nav aria-label="Support pages"><a href="../support/">Support / Hỗ trợ</a><a href="../privacy/">Privacy / Quyền riêng tư</a><a href="../terms/">Terms / Điều khoản</a></nav></header><main><nav class="languages" aria-label="Languages"><a href="#en" lang="en">English</a><a href="#vi" lang="vi">Tiếng Việt</a></nav><section class="language" id="en" lang="en">
+    <h2>Scope and your choices</h2>
+    <p>This policy covers ScopeVouch and its QuoteProof update under the same App Store app. Core job records, manual quotes, invoices, calculations, document history and backups are processed on your device. Optional AI scope drafting applies only in versions where that feature is enabled. Earlier ScopeVouch versions do not upload job content to an AI backend.</p>
+    <p>You can keep entering scope and prices manually without AI or an internet connection. Declining AI sharing does not delete records, documents or existing purchase rights. We do not use advertising or tracking SDKs.</p>
+    <h2>Local records and exports</h2>
+    <p>Business and client details, service addresses, scope, rates, charges, tax, payments, acknowledgements, job photos and generated PDFs remain in protected app-managed local storage. Your chosen backup, CSV and PDF export destinations have their own privacy practices. We do not automatically upload your workspace or exported files.</p>
+    <h2>Camera, photos and voice</h2>
+    <p>Camera access is requested when you choose to take a photo; Apple's photo picker lets you choose specific images. For AI capture, selected images are reduced in size and re-encoded without image metadata before transmission. Removing metadata does not remove identifying details visible in an image.</p>
+    <p>In versions that include voice capture, it requests microphone and speech recognition access. The app requires English (US) on-device speech recognition and disables this capture method when it is unsupported. Raw audio is not saved or uploaded by the app for AI drafting. The transcript stays in the capture session until you explicitly use it as scope or choose to share it for an AI request. Apple system keyboard dictation is governed separately by Apple's settings and privacy practices.</p>
+    <h2>Optional AI scope drafting</h2>
+    <p>After you confirm sharing for a request, only the capture notes or reviewed transcript and the photos you selected are sent over HTTPS to our backend and then to OpenAI for a draft. Saved customer fields, Rate Card entries, totals, tax settings, PDFs, payment history and raw audio are not automatically included. Notes and images you choose may themselves contain personal information; avoid sharing faces, personal documents or unnecessary client details.</p>
+    <p>Our backend does not persist or log the submitted notes, images or returned draft. It requests OpenAI Responses with response storage disabled. This does not mean zero provider retention: OpenAI may retain API content for abuse monitoring under its <a href="https://developers.openai.com/api/docs/guides/your-data">API data controls</a>. We do not opt in to using your API content for model training.</p>
+    <p>AI returns editable descriptions and clarification questions. It does not supply confirmed measurements, quantities, prices or tax. Only scope and items you explicitly apply become local records; billing values are entered and confirmed separately.</p>
+    <h2>Device verification and service security</h2>
+    <p>When requesting AI, the app uses Apple's App Attest service to verify that it is a genuine instance of this app. Apple handles that verification under its own privacy practices. Our backend keeps a hash of the app's opaque verification key identifier, its public key, an assertion counter, last-use time, hashed short-lived session credentials and request counts. These records help authenticate requests, prevent replay and limit abuse. They are not an Apple Account identifier, advertising identifier or a copy of your business records.</p>
+    <p>Verification challenges expire after two minutes and session credentials after fifteen minutes. Expired records are removed through regular maintenance. Per-device request-count records expire after approximately two to three days and are removed during regular maintenance; verification records are removed after approximately thirty days without use. The service uses temporary network addresses for rate limiting. Hosting infrastructure may process connection metadata, such as IP address, request time and status, under its security and operational practices. We do not use this information for advertising or cross-app tracking.</p>
+    <h2>Production hosting</h2>
+    <p>Render hosts the AI backend in Oregon, United States. It processes network connection metadata to operate and protect the service. Render retains infrastructure and runtime logs for the window provided by the workspace plan; see its <a href="https://render.com/docs/logging">logging retention policy</a>. Our application does not write notes, images, drafts or credentials to these logs. Render’s infrastructure processing follows its <a href="https://render.com/privacy">privacy policy</a>.</p>
+    <p>Device verification and session metadata are stored on an encrypted persistent disk. Render takes encrypted daily disk snapshots that are available for at least seven days under its <a href="https://render.com/docs/disks">disk backup policy</a>. These snapshots contain security metadata, not job notes, photos or drafts. Deleted security metadata may remain in existing snapshots until they expire.</p>
+    <h2>Deletion and retention</h2>
+    <p>You can delete local jobs in the app. Deleting the app removes its local container; copies you exported remain at their chosen destinations. Create a full backup before deleting the app if you want to retain your workspace.</p>
+    <p>In AI-enabled versions, Settings → Delete AI connection data sends a device-authenticated deletion request for the backend verification and session records and removes the saved connection key identifier from your device. It does not delete your local jobs, documents or purchases. A new connection is created only when you request AI again. If the service is unavailable, the app reports that deletion did not complete so you can retry.</p>
+    <p>Deleted security records may remain in hosting backups until the applicable backup retention expires. Deleting connection data does not retroactively remove a submitted request from OpenAI's abuse-monitoring retention. That processing follows OpenAI's API data controls. We do not store a remote job-content copy to retrieve or delete.</p>
+    <h2>Purchases, support and security</h2>
+    <p>Apple processes App Store purchases, subscriptions and restores. No job content is sent through the app's StoreKit flow, and we do not receive your card details. Existing Pro entitlements use the original products and verified Apple transactions.</p>
+    <p>We use iOS file protection where supported, device-only Keychain storage for the verification key identifier, HTTPS for production requests and server-side provider credentials. No storage or transmission method guarantees absolute security. Protect your device, passcode, exported backups and shared documents.</p>
+    <p>For support or privacy questions, email <a href="mailto:kb.technologies.support@gmail.com?subject=QuoteProof%20Privacy">kb.technologies.support@gmail.com</a>. Include only the app version and a description of the issue. Do not send passwords, API keys, customer records, job photos, backups or full payment details. Email support is voluntary; your message and reply address are used to handle your request and are processed by the email service.</p>
+    <h2>Children and policy changes</h2>
+    <p>This app is a business utility and is not directed to children. We update this policy when processing practices change; the effective date identifies this published version.</p>
+  </section><hr><section class="language" id="vi" lang="vi"><h2>Phạm vi và lựa chọn của bạn</h2><p>Chính sách này áp dụng cho ScopeVouch và bản cập nhật QuoteProof trong cùng ứng dụng App Store. Hồ sơ công việc, báo giá nhập thủ công, hóa đơn, phép tính, lịch sử tài liệu và bản sao lưu được xử lý trên thiết bị. Soạn phạm vi bằng AI là tùy chọn, chỉ có trong phiên bản bật tính năng này. ScopeVouch đời trước không gửi nội dung công việc đến máy chủ AI.</p><p>Bạn có thể nhập phạm vi và giá thủ công, không cần AI hoặc internet. Từ chối chia sẻ với AI không xóa hồ sơ, tài liệu hay quyền mua cũ. Chúng tôi không dùng SDK quảng cáo hoặc theo dõi.</p><h2>Dữ liệu cục bộ và xuất tệp</h2><p>Thông tin doanh nghiệp, khách hàng, địa chỉ thi công, phạm vi, bảng giá, khoản phí, thuế, thanh toán, xác nhận, ảnh và PDF được lưu trong vùng dữ liệu cục bộ do ứng dụng quản lý và bảo vệ. Nơi bạn chọn lưu bản sao lưu, CSV hoặc PDF có chính sách riêng. Chúng tôi không tự tải workspace hay tệp xuất lên máy chủ.</p><h2>Camera, ảnh và giọng nói</h2><p>Quyền camera chỉ được yêu cầu khi bạn chọn chụp ảnh; bộ chọn ảnh của Apple cho phép chọn từng ảnh. Ảnh chọn cho AI được thu nhỏ và mã hóa lại để loại bỏ metadata trước khi gửi. Việc này không xóa thông tin nhận dạng đang nhìn thấy trong ảnh.</p><p>Ở phiên bản có ghi âm, ứng dụng yêu cầu quyền micro và nhận dạng giọng nói. Tính năng này bắt buộc dùng nhận dạng tiếng Anh (Mỹ) ngay trên thiết bị và không hoạt động khi thiết bị không hỗ trợ. Ứng dụng không lưu hoặc tải âm thanh gốc lên để soạn AI. Bản chép lời ở trong phiên thu thập cho đến khi bạn dùng làm phạm vi hoặc chủ động chia sẻ cho một yêu cầu AI. Tính năng đọc chính tả của bàn phím hệ thống chịu sự điều chỉnh riêng của Apple.</p><h2>Soạn phạm vi bằng AI — tùy chọn</h2><p>Sau khi bạn đồng ý chia sẻ cho một yêu cầu, chỉ ghi chú hoặc bản chép lời đã xem lại và ảnh được chọn mới được gửi qua HTTPS đến máy chủ QuoteProof rồi đến OpenAI để tạo bản nháp. Các trường khách hàng đã lưu, bảng giá, tổng tiền, thiết lập thuế, PDF, lịch sử thanh toán và âm thanh gốc không được tự đính kèm. Ghi chú và ảnh bạn chọn vẫn có thể chứa thông tin cá nhân; hãy tránh khuôn mặt, giấy tờ cá nhân và chi tiết khách hàng không cần thiết.</p><p>Máy chủ QuoteProof không lưu bền vững hoặc ghi log ghi chú, ảnh hay bản nháp trả về. Yêu cầu OpenAI Responses được gửi với tính năng lưu response tắt. Điều này không có nghĩa nhà cung cấp không lưu dữ liệu: OpenAI có thể giữ nội dung API để giám sát lạm dụng theo <a href="https://developers.openai.com/api/docs/guides/your-data">cơ chế kiểm soát dữ liệu API</a>. Chúng tôi không đăng ký cho phép dùng nội dung API của bạn để huấn luyện mô hình.</p><p>AI trả về mô tả có thể chỉnh sửa và câu hỏi làm rõ. AI không cung cấp số đo, số lượng, giá hay thuế đã xác nhận. Chỉ phạm vi và hạng mục bạn chủ động áp dụng mới trở thành hồ sơ cục bộ; các giá trị tính tiền được nhập và xác nhận riêng.</p><h2>Xác thực thiết bị và bảo mật dịch vụ</h2><p>Khi yêu cầu AI, ứng dụng dùng App Attest của Apple để xác minh đây là bản cài thật. Apple xử lý việc xác minh theo chính sách của Apple. Máy chủ giữ giá trị băm của mã khóa xác thực, khóa công khai, bộ đếm assertion, lần sử dụng cuối, thông tin phiên ngắn hạn đã băm và số yêu cầu. Dữ liệu này dùng để xác thực, chống phát lại và hạn chế lạm dụng; không phải mã Apple Account, mã quảng cáo hay bản sao hồ sơ kinh doanh.</p><p>Thử thách xác thực hết hạn sau 2 phút và thông tin phiên sau 15 phút. Dữ liệu hết hạn được dọn định kỳ. Số yêu cầu theo thiết bị hết hạn sau khoảng 2–3 ngày và được xóa trong đợt dọn định kỳ; hồ sơ xác thực bị xóa sau khoảng 30 ngày không sử dụng. Dịch vụ dùng địa chỉ mạng tạm thời để giới hạn tần suất. Hạ tầng có thể xử lý IP, thời gian và trạng thái yêu cầu để bảo mật, vận hành. Chúng tôi không dùng chúng cho quảng cáo hoặc theo dõi giữa ứng dụng.</p><h2>Hạ tầng dịch vụ</h2><p>Render lưu trữ máy chủ AI tại Oregon, Hoa Kỳ và xử lý metadata kết nối mạng để vận hành, bảo vệ dịch vụ. Render lưu log hạ tầng và runtime theo thời hạn của gói workspace; xem <a href="https://render.com/docs/logging">chính sách lưu log</a>. Ứng dụng máy chủ không ghi ghi chú, ảnh, bản nháp hay thông tin đăng nhập vào log. Việc xử lý hạ tầng tuân theo <a href="https://render.com/privacy">chính sách quyền riêng tư của Render</a>.</p><p>Metadata xác thực thiết bị và phiên nằm trên disk mã hóa bền vững. Render tạo snapshot mã hóa hằng ngày, khả dụng ít nhất 7 ngày theo <a href="https://render.com/docs/disks">chính sách sao lưu disk</a>. Snapshot chứa metadata bảo mật, không chứa ghi chú, ảnh hoặc bản nháp công việc. Metadata đã xóa có thể còn trong snapshot hiện có cho đến khi bản sao hết hạn.</p><h2>Xóa và thời gian lưu</h2><p>Bạn có thể xóa công việc cục bộ trong ứng dụng. Gỡ ứng dụng xóa vùng dữ liệu cục bộ; bản sao đã xuất vẫn ở nơi bạn chọn lưu. Hãy xuất bản sao lưu đầy đủ trước khi gỡ nếu muốn giữ workspace.</p><p>Ở phiên bản có AI, Cài đặt → Xóa dữ liệu kết nối AI gửi yêu cầu xóa có xác thực thiết bị đối với hồ sơ xác thực và phiên trên máy chủ, đồng thời bỏ mã khóa kết nối đã lưu trên thiết bị. Thao tác không xóa công việc, tài liệu hay giao dịch mua. Kết nối mới chỉ được tạo khi bạn yêu cầu AI lần nữa. Nếu dịch vụ không khả dụng, ứng dụng báo xóa chưa hoàn tất để bạn thử lại.</p><p>Hồ sơ bảo mật đã xóa có thể còn trong bản sao lưu của hạ tầng cho đến khi hết hạn. Xóa kết nối không xóa ngược nội dung yêu cầu khỏi thời gian giám sát lạm dụng của OpenAI; việc đó tuân theo kiểm soát dữ liệu API của OpenAI. Chúng tôi không giữ bản sao nội dung công việc từ xa để truy xuất hoặc xóa.</p><h2>Giao dịch mua, hỗ trợ và bảo mật</h2><p>Apple xử lý giao dịch App Store, đăng ký và khôi phục. Không có nội dung công việc được gửi qua luồng StoreKit và chúng tôi không nhận thông tin thẻ. Quyền Pro cũ dùng các sản phẩm ban đầu và giao dịch Apple đã xác minh.</p><p>Chúng tôi dùng bảo vệ tệp iOS khi được hỗ trợ, Keychain chỉ trên thiết bị cho mã khóa xác thực, HTTPS cho yêu cầu production và thông tin nhà cung cấp chỉ ở máy chủ. Không có cách lưu hoặc truyền dữ liệu nào bảo đảm an toàn tuyệt đối. Hãy bảo vệ thiết bị, mật mã, bản sao lưu và tài liệu chia sẻ.</p><p>Để hỏi về hỗ trợ hoặc quyền riêng tư, gửi email đến <a href="mailto:kb.technologies.support@gmail.com?subject=QuoteProof%20Privacy">kb.technologies.support@gmail.com</a>. Chỉ gửi phiên bản ứng dụng và mô tả vấn đề. Không gửi mật khẩu, API key, dữ liệu khách hàng, ảnh công việc, bản sao lưu hoặc đầy đủ thông tin thanh toán. Hỗ trợ qua email là tự nguyện; nội dung thư và địa chỉ trả lời được dùng để xử lý yêu cầu và được dịch vụ email xử lý.</p><h2>Trẻ em và thay đổi chính sách</h2><p>Ứng dụng là công cụ kinh doanh, không hướng đến trẻ em. Chúng tôi cập nhật chính sách khi cách xử lý dữ liệu thay đổi; ngày hiệu lực xác định bản công bố này.</p></section></main><footer>QuoteProof / ScopeVouch · <a href="mailto:kb.technologies.support@gmail.com?subject=QuoteProof%20Support">kb.technologies.support@gmail.com</a></footer></body></html>
