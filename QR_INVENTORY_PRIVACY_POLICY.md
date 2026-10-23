@@ -217,7 +217,7 @@ You can also:
 - Manage or cancel subscriptions in your Apple ID subscription settings
 - Delete the App to remove its local data container
 
-To exercise a right concerning data controlled by us, email [support@khoabao.store](mailto:support@khoabao.store). We will respond within the period required by applicable law.
+To exercise a right concerning data controlled by us, email [kb.technologies.support@gmail.com](mailto:kb.technologies.support@gmail.com). We will respond within the period required by applicable law.
 
 ---
 
@@ -233,7 +233,7 @@ For privacy questions, requests, or concerns, contact:
 
 **Khoa Bảo Store**<br>
 **Legal Owner:** NGUYEN DINH BAO KHOA<br>
-**Email:** [support@khoabao.store](mailto:support@khoabao.store)
+**Email:** [kb.technologies.support@gmail.com](mailto:kb.technologies.support@gmail.com)
 
 For Apple payment or Apple ID questions, contact [Apple Support](https://support.apple.com/contact).
 

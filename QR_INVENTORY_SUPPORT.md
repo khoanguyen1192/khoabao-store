@@ -1,7 +1,7 @@
 # QR Scanner Support
 
 For help with QR Scanner (QR Code Scanner: Scan Barcodes), contact
-[support@khoabao.store](mailto:support@khoabao.store).
+[kb.technologies.support@gmail.com](mailto:kb.technologies.support@gmail.com).
 
 Please include your app version, iOS version, device model, the steps that led
 to the issue, and what you expected to happen. Do not send passwords, private
