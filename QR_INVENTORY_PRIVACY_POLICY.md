@@ -1,7 +1,7 @@
 # Privacy Policy for QR Inventory & Barcode Scanner
 
 **Effective Date:** August 19, 2026<br>
-**Last Updated:** November 3, 2026<br>
+**Last Updated:** November 4, 2026<br>
 **Developer:** Khoa Bảo Store (Legal Owner: NGUYEN DINH BAO KHOA)
 
 ---
@@ -103,7 +103,7 @@ When **Firebase Analytics** collection is enabled in the production configuratio
 
 We use this information to operate the App, understand aggregate feature usage, improve reliability and usability, measure purchase-flow performance, and configure features. We do not intentionally include scanned code payloads, selected photos, contact or calendar content, imported CSV content, or inventory record details in Firebase analytics events.
 
-**Optional ad measurement in version 1.1.7 and later.** Ad measurement is off by default. You can opt in during onboarding or in Settings → Privacy, and turn it off at any time in Settings. If you opt in, Google’s on-device conversion measurement uses de-identified app event data to measure which ads lead to app installs. This setting does not enable personalized advertising. We do not provide scanned content, email addresses, or phone numbers for this measurement.
+**Optional ad measurement in version 1.1.7.** In version 1.1.7, ad measurement is off by default and can be enabled during onboarding or in the app’s privacy settings. If enabled, Google’s on-device conversion measurement uses de-identified app event data to measure installs. Starting in version 1.1.8, ad measurement is disabled. Firebase Analytics continues to measure app usage. We do not provide scanned content, email addresses, or phone numbers for ad measurement.
 
 If Firebase Analytics collection is disabled in a release configuration, developer-defined analytics events are not sent to Firebase Analytics. Firebase Remote Config may still process the technical and installation information required to provide remote configuration.
 
