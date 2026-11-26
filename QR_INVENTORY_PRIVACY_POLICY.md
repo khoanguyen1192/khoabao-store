@@ -1,14 +1,14 @@
 # Privacy Policy for QR Inventory & Barcode Scanner
 
 **Effective Date:** August 19, 2026<br>
-**Last Updated:** November 4, 2026<br>
+**Last Updated:** November 26, 2026<br>
 **Developer:** Khoa Bảo Store (Legal Owner: NGUYEN DINH BAO KHOA)
 
 ---
 
 ## 1. Introduction
 
-This Privacy Policy explains how the iOS application **QR Inventory & Barcode Scanner** (also displayed in the app as **QR Scanner**) (the “App”) handles information when you scan or create codes, organize a code library, manage inventory projects, use product lookup, or purchase a subscription.
+This Privacy Policy explains how the iOS application **QR Inventory & Barcode Scanner** (also displayed in the app as **QR Scanner**) (the “App”) handles information when you scan or create codes, organize a code library, manage inventory projects, use product lookup, optionally create and manage Dynamic QR links and Insights, or purchase a subscription.
 
 The App is developed and maintained by **Khoa Bảo Store** (“we,” “us,” or “our”). By using the App, you acknowledge the practices described in this Privacy Policy. If you do not agree with this policy, please do not use the App.
 
@@ -18,7 +18,7 @@ The App does not require you to create an account.
 
 ## 2. Privacy Summary
 
-- Scanned and generated code content, saved history, projects, inventory records, imported CSV data, and preferences are stored locally on your device.
+- Ordinary static scanned/generated codes, saved history, projects, inventory records, imported CSV data, and preferences are stored locally on your device. If you explicitly create a Dynamic QR link in a version that supports it, its title and destination are stored online as described in Section 5.6.
 - Camera frames and images selected for code or text recognition are processed on your device and are not uploaded by us.
 - When you request product information for a numeric barcode, the barcode is sent to the Open Food Facts API.
 - Firebase may process app configuration, installation, technical, and app-usage information when those services are enabled.
@@ -42,7 +42,7 @@ Depending on the features you use, the App may store the following data locally 
 - CSV catalogs you import and reports you generate
 - App preferences, onboarding status, theme and language choices, free-scan counters, and cached subscription status
 
-This content remains on your device unless you intentionally share or export it, request an online product lookup, or use an operating-system action that sends the content to another app or service.
+This content remains on your device unless you intentionally share or export it, request an online product lookup, explicitly create or manage a Dynamic QR link as described in Section 5.6, or use an operating-system action that sends the content to another app or service.
 
 ### 3.2 CSV Import and Export
 
@@ -165,6 +165,27 @@ Scanned content may let you open a website, map, phone call, message, email comp
 
 ---
 
+### 5.6 Dynamic QR Links and QR Insights
+
+In versions that include Dynamic QR, creating or managing a Dynamic link is optional and requires an internet connection. When you choose this feature, the App sends the link title, HTTPS destination, enabled or paused status, optional expiration and management requests to our Firebase/Google Cloud service. Ordinary static scans, camera frames, selected photos, inventory records and existing saved codes are not automatically uploaded to this service.
+
+The service stores those link details, record timestamps and a hash of a randomly generated management credential. The credential itself is held in this device's Keychain and is not included in exported QR images, ordinary code backups or Firebase Analytics events. The hash associates the links with this device's management rights and helps enforce access and abuse limits. It is a pseudonymous identifier, not a guarantee that associated data is anonymous.
+
+A Dynamic QR contains a public redirect URL. Anyone who has that URL or the QR image can open the current destination. You can edit its destination, pause or resume the link, set an expiration, or delete it. Public recipients' browsers also contact the destination website under that website's own privacy practices.
+
+QR Insights stores best-effort request/open counts, up to 90 days of UTC daily aggregate counts, coarse device and browser category totals, and update timestamps. Counts represent requests rather than unique visitors or guaranteed human scans. Application records do not store raw IP addresses, raw User-Agent strings, cookies or referrers. Google Cloud infrastructure and Firebase App Check can process network and device-integrity metadata for service delivery, logging, security and abuse prevention under their own policies and configured retention. We do not use Dynamic QR destinations, titles or ownership credentials for advertising, and do not include them in Firebase Analytics events.
+
+Management access is tied to this device's Keychain credential. There is no cloud-account or cross-device recovery for these rights. Deleting the App or losing the credential does not itself delete the online link, and can prevent you from managing it. Keep management access and delete links you no longer need before removing the App. Contact [kb.technologies.support@gmail.com](mailto:kb.technologies.support@gmail.com) for support or a privacy request. A public redirect URL alone does not prove ownership of its management rights.
+
+Deleting a Dynamic link removes its destination and aggregate statistics from the active service and stops its public URL from redirecting. Local QR images, history and exported copies are separate. Minimal hashed ownership/quota records and creation counters remain for abuse prevention; the current service does not automatically expire these quota records. Daily count history is bounded to 90 days; lifetime aggregate counts and link details remain while the link exists. Infrastructure logs and any provider-retained copies follow provider retention and applicable obligations. We use this service data to provide link functionality, owner-facing statistics and security, not targeted advertising.
+
+Learn more:
+
+- [Firebase App Check](https://firebase.google.com/docs/app-check)
+- [Google Cloud data processing and privacy](https://cloud.google.com/terms/cloud-privacy-notice)
+
+---
+
 ## 6. How We Use Information
 
 We process information described in this policy to:
@@ -192,6 +213,8 @@ Locally stored data remains on your device until you delete individual records, 
 
 Firebase, RevenueCat, Apple, Open Food Facts, and any destination you choose for sharing or exporting retain information according to their own policies and legal obligations. Apple purchase records may remain associated with your Apple ID even after the App is deleted so that purchases can be restored and financial obligations can be met.
 
+For Dynamic QR link details, request aggregates, hashed quota records, device-bound management rights and deletion limitations, see Section 5.6. Removing the App does not automatically delete these online records.
+
 For a privacy request concerning data under our control, contact us using Section 11. We may ask for information reasonably necessary to locate a relevant anonymous installation or transaction record. We cannot delete information controlled solely by Apple or a third-party destination on your behalf.
 
 ---
@@ -214,6 +237,7 @@ You can also:
 
 - Delete saved codes, projects, or inventory records in the App
 - Decline or revoke Camera, Photos, Contacts, or Calendar permission in iOS Settings
+- Choose not to create a Dynamic QR link; edit, pause, expire or delete existing Dynamic links while you retain management access
 - Choose not to request online product lookup
 - Choose not to share or export local content
 - Manage or cancel subscriptions in your Apple ID subscription settings
